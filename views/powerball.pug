@@ -3,6 +3,8 @@ doctype html
 head
   title Powerball number generator
 
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+
   style.
     html, body {
       margin: 0;
@@ -39,6 +41,18 @@ head
     .ball:last-child {
       background-color: red;
       color: white;
+    }
+
+    @media (max-width: 768px) {
+      #ball-row {
+        width: 90vw;
+      }
+
+      .ball {
+        width: 12.5vw;
+        height: 12.5vw;
+        font-size: 5vw;
+      }
     }
 
 body
