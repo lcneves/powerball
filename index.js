@@ -48,8 +48,7 @@ try {
   port = parseInt(process.env.PORT, 10);
   assert(Number.isInteger(port));
 } catch (ignoreErr) {
-  console.error('Environment variable PORT needs to be set as integer!');
-  process.exit(1);
+  port = 8004; // Whatever...
 }
 
 app.listen(port, (err) => {
