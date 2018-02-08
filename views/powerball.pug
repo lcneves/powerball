@@ -1,0 +1,48 @@
+doctype html
+
+head
+  title Powerball number generator
+
+  style.
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #ball-row {
+      width: 32.5rem;
+      height: 5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .ball {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 5rem;
+      border: 0.1rem solid black;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+
+    .ball:last-child {
+      background-color: red;
+      color: white;
+    }
+
+body
+  #container
+    #ball-row
+      each n in numbers
+        .ball= n
